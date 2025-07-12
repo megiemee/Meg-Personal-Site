@@ -9,9 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
+    "@types/stripe": "^8.0.416",
+    "bootstrap": "^5.3.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.2.0",
+    "require": "^0.4.4",
+    "stripe": "^18.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

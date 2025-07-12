@@ -1,3 +1,7 @@
+import chopsticksFPGA from "../assets/images/chopsticksFPGA.jpg"
+import customLinuxShell from "../assets/images/Custom-Linux-Shell.png"
+import liveDisplay from "../assets/images/livedisplay.jpg"
+import placeholder from "../assets/images/placeholder.jpg"
 
 import { useState } from "react";
 
@@ -7,6 +11,8 @@ interface ListGroupProps {
     heading: string;
     onSelectProject: (project: string) => void;
 }
+
+const photos = [placeholder, liveDisplay, placeholder, chopsticksFPGA, placeholder, placeholder, placeholder, customLinuxShell];
 
 
 function ListGroup({ projects, heading, onSelectProject}: ListGroupProps){
@@ -33,7 +39,8 @@ function ListGroup({ projects, heading, onSelectProject}: ListGroupProps){
                 onSelectProject(project);
             }}
             >
-                <a className="link-opacity-50" href={"https://github.com/megiemee/" + project}>{project}</a>
+                <h6>{project}</h6>
+                <a className="link-opacity-50" href={"https://github.com/megiemee/" + project}><img width="200px" height="auto" src={photos[index]} alt = {project}></img></a>
             </li>
         ))}
     </ul>
